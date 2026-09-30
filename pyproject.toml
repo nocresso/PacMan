@@ -1,0 +1,24 @@
+[project]
+name = "pac-man"
+version = "0.1.0"
+description = "waka-waka!!"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "flake8>=7.3.0",
+    "mazegenerator",
+    "mypy>=2.3.1",
+    "pydantic>=2.13.4",
+    "pygame>=2.6.1",
+    "pyinstaller>=6.22.3",
+]
+
+[tool.uv.sources]
+mazegenerator = { path = "mazegenerator-2.1.0-py3-none-any.whl" }
+
+
+[tool.mypy]
+
+[[tool.mypy.overrides]]
+module = "mazegenerator.*"
+ignore_missing_imports = true
