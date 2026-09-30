@@ -23,9 +23,9 @@ Main features:
 - Persistent highscores stored in a JSON file.
 - Cheat mode to help testing all the features quickly.
 
-  ![Game screen](src_images/screenshot_game.png)
+![Game screen](src_images/screenshot_game.png)
 
-  ![Menu screen](src_images/Screenshot_menu.png)
+![Menu screen](src_images/Screenshot_menu.png)
 
 ## Instructions
 
