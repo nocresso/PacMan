@@ -23,6 +23,10 @@ Main features:
 - Persistent highscores stored in a JSON file.
 - Cheat mode to help testing all the features quickly.
 
+  ![Game screen](src_images/screenshot_game.png)
+
+  ![Menu screen](src_images/Screenshot_menu.png)
+
 ## Instructions
 
 ### Requirements
@@ -327,39 +331,3 @@ Relationships between the main classes:
 - `GameConfiguration` and `LevelConfig` (pydantic models) validate the
   configuration.
 
-## Project Management
-
-This project was developed by a team of two (`nocrespo` and `ayanez-o`).
-
-Alan implemented Pac-Man's movement and animation, the ghosts' movement and chasing algorithm (BFS),the integration and interaction between the game's elements (collisions between Pac-Man and the ghosts) and packaging the game for a public platform.
-
-Nora built the configuration parser, imported and adapted the assigned maze generator package, drew the maze on screen and added the pacgums to it, implemented the highscore system, built the different screens (main menu, pause menu, game over, victory, highscores and instructions) and the cheat mode used during peer review.
-
-The following tasks were done together: designing the project's core classes, the README, the Makefile, debugging, and checking the code against mypy and flake8.
-
-The following documents, inside the project_management/ directory, support the project's planning and analysis:
-
-- **`pacman_gantt.xlsx`** — project timeline (Gantt chart).
-- **`pacman_risk_analysis.odt`** — risk analysis.
-- **`analysis_and_decisions.docx`** — project analysis and the reasoning
-  behind the main technical decisions.
-
-## Resources
-
-### References
-
-- [Artificial Intelligence Search Problem: Solve Maze using Breadth First Search (BFS) Algorithm in Medium](https://medium.com/@luthfisauqi17_68455/artificial-intelligence-search-problem-solve-maze-using-breadth-first-search-bfs-algorithm-255139c6e1a3)
-- [Pac-Man general sprites uploaded by *Superjustinbros* to *www.spriters-resource.com*](https://www.spriters-resource.com/arcade/pacman/asset/52631/)
-- [How to create custom methods for sprite groups in pygame? (Game Development Stack Exchange)](https://gamedev.stackexchange.com/questions/155214/how-to-create-custom-methods-for-sprite-groups-in-pygame)
-- [Pygame Tutorial for Beginners: Pygame Boundaries - Stop Your Player From Leaving the Screen | No AI (YouTube)](https://www.youtube.com/watch?v=UOP_2zz30qo) 
-- [Maze Runner - Shortest Path Algorithms (Kaggle notebook) by *mexwell*](https://www.kaggle.com/code/mexwell/maze-runner-shortest-path-algorithms/notebook)
-
-### Use of AI
-
-- Explanation of the internal functioning of Pygame classes and functions
-  to create custom implementations.
-- Explanation of original PacMan features and functioning.
-- Detection of unused code and possible bugs, which were then checked and
-  fixed by hand.
-- Comparison of the code with the subject to find inconsistencies.
-- Help writing this README.
